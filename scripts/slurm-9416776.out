@@ -1,0 +1,74 @@
+======================================================
+Start Time  : Wed Oct  1 12:57:47 AM EDT 2025
+Submit Dir  : /projects/afodor_premier1/jyoun144/kmer_tutorial/scripts
+Job ID/Name : 9416776 / main_train_neural_network_with_saved_val_output_single_gpu.sh
+Node List   : str-gpu27
+Num Tasks   : 1 total [1 nodes @ 1 CPUs/node]
+======================================================
+
+CPUs per task: 1
+Kmer length:8
+Vocab size: 65536
+Max sequence token length is 143.
+label
+0    90
+1    90
+2    90
+3    90
+Name: count, dtype: int64
+label
+0    10
+1    10
+2    10
+3    10
+Name: count, dtype: int64
+Generated train/val split datasets with shapes (360, 5) and (40, 5), respectively.
+SimpleShallowNetworkSaveOutput(
+  (embedding_layer): Embedding(65536, 32)
+  (input_layer): Linear(in_features=32, out_features=16, bias=True)
+  (relu_input_layer): ReLU()
+  (hidden_layer): Linear(in_features=16, out_features=16, bias=True)
+  (relu_hidden_layer): ReLU()
+  (output_layer): Linear(in_features=16, out_features=4, bias=True)
+)
+Number of available GPUs: 1
+Epoch 1/25, Training Loss: 1.3886, Validation Loss: 1.3868,         Validation Accuracy: 0.2500. Epoch Duration: 0.3 seconds
+Epoch 2/25, Training Loss: 1.3857, Validation Loss: 1.3855,         Validation Accuracy: 0.2500. Epoch Duration: 0.1 seconds
+Epoch 3/25, Training Loss: 1.3833, Validation Loss: 1.3841,         Validation Accuracy: 0.2500. Epoch Duration: 0.1 seconds
+Epoch 4/25, Training Loss: 1.3803, Validation Loss: 1.3823,         Validation Accuracy: 0.2500. Epoch Duration: 0.1 seconds
+Epoch 5/25, Training Loss: 1.3767, Validation Loss: 1.3798,         Validation Accuracy: 0.2500. Epoch Duration: 0.1 seconds
+Epoch 6/25, Training Loss: 1.3714, Validation Loss: 1.3764,         Validation Accuracy: 0.2750. Epoch Duration: 0.1 seconds
+Epoch 7/25, Training Loss: 1.3639, Validation Loss: 1.3711,         Validation Accuracy: 0.4750. Epoch Duration: 0.1 seconds
+Epoch 8/25, Training Loss: 1.3532, Validation Loss: 1.3632,         Validation Accuracy: 0.4750. Epoch Duration: 0.1 seconds
+Epoch 9/25, Training Loss: 1.3380, Validation Loss: 1.3512,         Validation Accuracy: 0.5250. Epoch Duration: 0.1 seconds
+Epoch 10/25, Training Loss: 1.3155, Validation Loss: 1.3332,         Validation Accuracy: 0.6000. Epoch Duration: 0.1 seconds
+Epoch 11/25, Training Loss: 1.2837, Validation Loss: 1.3073,         Validation Accuracy: 0.6250. Epoch Duration: 0.1 seconds
+Epoch 12/25, Training Loss: 1.2389, Validation Loss: 1.2714,         Validation Accuracy: 0.6500. Epoch Duration: 0.1 seconds
+Epoch 13/25, Training Loss: 1.1791, Validation Loss: 1.2240,         Validation Accuracy: 0.6750. Epoch Duration: 0.1 seconds
+Epoch 14/25, Training Loss: 1.1033, Validation Loss: 1.1645,         Validation Accuracy: 0.7000. Epoch Duration: 0.1 seconds
+Epoch 15/25, Training Loss: 1.0143, Validation Loss: 1.0942,         Validation Accuracy: 0.7500. Epoch Duration: 0.1 seconds
+Epoch 16/25, Training Loss: 0.9153, Validation Loss: 1.0157,         Validation Accuracy: 0.7750. Epoch Duration: 0.1 seconds
+Epoch 17/25, Training Loss: 0.8076, Validation Loss: 0.9298,         Validation Accuracy: 0.8750. Epoch Duration: 0.1 seconds
+Epoch 18/25, Training Loss: 0.6973, Validation Loss: 0.8430,         Validation Accuracy: 0.9000. Epoch Duration: 0.1 seconds
+Epoch 19/25, Training Loss: 0.5864, Validation Loss: 0.7530,         Validation Accuracy: 0.9250. Epoch Duration: 0.1 seconds
+Epoch 20/25, Training Loss: 0.4776, Validation Loss: 0.6651,         Validation Accuracy: 0.9500. Epoch Duration: 0.1 seconds
+Epoch 21/25, Training Loss: 0.3766, Validation Loss: 0.5802,         Validation Accuracy: 0.9500. Epoch Duration: 0.1 seconds
+Epoch 22/25, Training Loss: 0.2886, Validation Loss: 0.5016,         Validation Accuracy: 0.9500. Epoch Duration: 0.1 seconds
+Epoch 23/25, Training Loss: 0.2151, Validation Loss: 0.4310,         Validation Accuracy: 1.0000. Epoch Duration: 0.1 seconds
+Epoch 24/25, Training Loss: 0.1579, Validation Loss: 0.3710,         Validation Accuracy: 1.0000. Epoch Duration: 0.1 seconds
+Epoch 25/25, Training Loss: 0.1163, Validation Loss: 0.3219,         Validation Accuracy: 1.0000. Epoch Duration: 0.1 seconds
+Classification Results (threshold=0.5)
+Total Reads: 40
+Reads Classified: 38.
+Reads Correct: 38
+Precision: 1.0
+Recall: 0.95
+Training finished. Took 3.3 seconds
+Saved model validation logits of shape (40, 4) to ../data/randomSeq_val_output_logits.npy.
+Saved model validation labels of shape (40,) to ../data/randomSeq_val_output_labels.npy.
+Saved trained model at ../data/randomSeq_saved_model_params.pkl
+
+======================================================
+End Time: Wed Oct  1 12:57:55 AM EDT 2025
+It took 8 seconds to train shallow ANN model using data from ../data/randomSeq.txt.
+======================================================
