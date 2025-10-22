@@ -1,6 +1,6 @@
 ======================================================
 Start Time  : Wed Oct  1 12:57:47 AM EDT 2025
-Submit Dir  : /projects/afodor_premier1/jyoun144/kmer_tutorial/scripts
+Submit Dir  : 
 Job ID/Name : 9416776 / main_train_neural_network_with_saved_val_output_single_gpu.sh
 Node List   : str-gpu27
 Num Tasks   : 1 total [1 nodes @ 1 CPUs/node]
