@@ -1,6 +1,7 @@
 from torch.utils.data import Dataset
 import pandas as pd
 import torch
+import numpy as np
 
 class InputIDDataFrameDataset(Dataset):
     def __init__(self, df):
@@ -12,4 +13,4 @@ class InputIDDataFrameDataset(Dataset):
     def __getitem__(self, idx):        
         input_ids, label = self.df[['input_ids', 'label']].iloc[idx, :]     
         
-        return input_ids, label
+        return np.array(input_ids), label
